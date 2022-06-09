@@ -1,0 +1,29 @@
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 15px;
+    border: ridge;
+    cursor: pointer;
+
+
+ 
+    
+}
+div {
+     display: flex;
+     justify-content: center;
+
+   
+     
+}
+.pri{
+    text-align: center;
+    color: rgb(8, 238, 162);
+    position: absolute;
+}
+
+body{
+background-image:url(patternpad.svg);
+background-position: center;
+background-size: cover;
+}
