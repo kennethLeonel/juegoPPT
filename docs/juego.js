@@ -97,18 +97,24 @@ function cuadrarImagenes(personaje, personaje2){
   let imagenJugador = document.createElement("img");
   let imagenJugador2 = document.createElement("img");
 
-  
 
-    imagenJugador.src =   personaje + ".png" ;
 
-    if(!imagenJugador.onerror){
-        imagenJugador.src = personaje + ".jpg";
+    imagenJugador.src = "img/" + personaje + ".jpg";
+    imagenJugador.onerror = function() {
+        imagenJugador.src = "img/" + personaje + ".png";
     }
-    imagenJugador2.src = personaje2 + ".png" ;
+
+    // if(imagenJugador.onerror){
+    //     imagenJugador.src = "img/" + personaje + ".png";
+    // }
+    imagenJugador2.src = "img/" + personaje2 + ".jpg";
+    imagenJugador2.onerror = function() {
+        imagenJugador2.src = "img/" + personaje2 + ".png";
+    }
     // Si el recurso no existe, se carga una imagen con extension jpg
-    if(!imagenJugador2.onerror){
-        imagenJugador2.src = personaje2 + ".jpg";
-    }
+    // if(imagenJugador2.onerror){
+    //     imagenJugador2.src = "img/" + personaje2 + ".png";
+    // }
 
     imagenJugador.style.width = "200px";
     imagenJugador2.style.width = "200px";
